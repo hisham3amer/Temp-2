@@ -656,3 +656,121 @@ body > div.portfolio > button a{
     right: -10px;
     top: -14px;
 }
+.quote{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 80%);
+}
+.quote .container{
+    padding: 30px;
+}
+.quote q{
+    position: relative;
+    FONT-SIZE: 30px;
+}
+.quote p{
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.pricing .categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    gap: 25px;
+}
+.pricing .categories .cat{
+    background-color:#fcfcfc;
+    text-align: center;
+    
+}
+.pricing .categories .cat .cat-heading{
+    padding: 30px 30px 0 30px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .categories .cat .cat-title{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.pricing .categories .cat .price{
+    font-weight: 700;
+    font-size: 55px;
+    padding: 20px;
+    position: relative;
+}
+.pricing .categories .cat .price::before{
+    content: "$";
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    left: 60px;
+    top: 5px;
+}
+.pricing .categories .cat .price::after{
+    content: "/Mo";
+    position: absolute;
+    font-size: 19px;
+    font-weight: bold;
+    bottom: 27px;
+    right: 32px;
+}
+.pricing .categories .cat .features{
+    border-bottom: 1px solid var(--main-color);
+}
+.pricing .categories .cat .features p{
+    padding: 21px;
+    font-size: 14px;
+    position: relative;
+}
+.pricing .categories .cat .features p:not(:last-of-type):after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-color);
+}
+.pricing .categories .cat .btn{
+    padding: 50px;
+}
+.pricing .categories .cat .btn button{
+    padding: 13px;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    text-transform: capitalize;
+    color: #551a8b;
+    font-size: 14px
+}
+.pricing .contact{
+    text-align: center;
+}
+.pricing .contact p{
+    padding: 43px 0 20px;
+    font-size: 20px;
+}
+.pricing .contact button{
+    border: none;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    margin-bottom: 80px;
+    text-transform: capitalize
+}
